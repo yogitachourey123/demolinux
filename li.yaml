@@ -3,7 +3,7 @@
    tasks:
    - name: Clone a github repository
      git:
-       repo:
+       repo: https://github.com/yogitachourey123/demolinux.git
        dest: /home/hcligt/y
        clone: yes
        update: yes

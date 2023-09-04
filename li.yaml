@@ -3,7 +3,7 @@
    tasks:
    - name: Clone a github repository
      git:
-       repo: https://github.com/yogitachourey123/clonetoansible.git
+       repo:
        dest: /home/hcligt/y
        clone: yes
        update: yes

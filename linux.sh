@@ -3,7 +3,7 @@ function Linuxprereq(){
 	local timezone="$1" # ex America/Los_Angeles  
 	local preReqsPath="$1" #ex /root/CentOS_Offline_PreReqs
 	local tarName="$2" #ex docker-18.09.6.tgz
-  local composeFolder="$3" #ex docker-compose-Linux-x86_64 
+ 	 local composeFolder="$3" #ex docker-compose-Linux-x86_64 
 	local dialogFilename="$2" #ex dialog-1.2-5.20130523.el7.x86_64.rpm
 	local JDKFilename="$2" #ex jdk-8u241-linux-x64.rpm
 
@@ -11,7 +11,7 @@ function Linuxprereq(){
     timedatectl set-timezone $timezone
     systemctl restart chronyd
 	
-	  echo "Disabling firewall"
+   echo "Disabling firewall"
     systemctl stop firewalld
     systemctl disable firewalld
 

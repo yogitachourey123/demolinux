@@ -4,8 +4,8 @@
    - name: Clone a github repository
      git:
        repo: https://github.com/yogitachourey123/demolinux.git
-       dest: /home/hcligt/y
+       dest: /home/hcligt/dir
        clone: yes
        update: yes
    - name: Run shell script
-     shell: "sh /home/hcligt/y/linux.sh {{ timezone }} {{ preReqsPath }} {{ tarName }} {{ composeFolder }} {{dialogFilename }} {{  JDKFilename}}"
+     shell: "sh /home/hcligt/dir/linux.sh {{ timezone }} {{ preReqsPath }} {{ tarName }} {{ composeFolder }} {{dialogFilename }} {{  JDKFilename}}"
